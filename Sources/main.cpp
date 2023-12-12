@@ -102,7 +102,7 @@ exit:
         menu += new MenuEntry(Color::Yellow << "パッチコード作成自動化", nullptr, autoPatchCode, "開始アドレスと終了アドレスを設定してください。\n開始アドレスと終了アドレスが同じ場合は、アドレスの初期化をしてください。\n\n次に [ファイルに書き込み] を押下してください。\n\n/lumna/plugins/" + getFilePath() + " にコードが作成されます。\n\n" + (Color::Red << "※注意\n") + "CTRPF上でコードが作成されたファイルを開くと、\n新しくコードが作成できません。その場合はゲームを再起動してからコードを作成してください。\n\n" + (Color::White << "Enjoy coding!"));
         menu += EntryWithHotkey(new MenuEntry(Color::Orange << "ウォッチポイント（逆アセ）", nullptr, doWPManager), {Hotkey(Key::R | Y, "監視開始"), Hotkey(Key::R | X, "監視終了"), Hotkey(Key::R | A, "一時停止")});
         menu += EntryWithHotkey(new MenuEntry(Color::Turquoise << "レジスタ確認", regConf), {Hotkey(Key::L | Y, "アドレス変更"), Hotkey(Key::L | X, "エントリー無効")});
-        menu += new MenuEntry(Color::Lime << "16進数電卓", nullptr, calcHex);
+        menu += new MenuEntry(Color::Lime << "16進数電卓", nullptr, calcHex);        
     }
 
     int     main(void)

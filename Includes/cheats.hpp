@@ -8,7 +8,7 @@
 namespace CTRPluginFramework
 {
     using StringVector = std::vector<std::string>;
-    using OnPauseResumeCallback = void(*)(bool goingToPause);
+    
     std::string getFilePath();
 
     void autoPatchCode(MenuEntry *entry);
